@@ -16,9 +16,16 @@ struct recurent_series_2nd_order {
 	second_order_relation_func recurence_relation;
 };
 
-/* O(n) */
+/*
+*  returns nth member of a first order series
+*  O(n)
+*/
 number get_nth_first_order(struct recurent_series_1st_order* series, unsigned int n);
-/* O(n) */
+
+/*
+*  returns nth member of a second order series
+*  O(n) wow
+*/
 number get_nth_sedond_order(struct recurent_series_2nd_order* series, unsigned int n);
 
 #endif
