@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "series.h++"
+#include "sequence.h++"
 
 void test_1st_order(){
-	struct recurent_series_1st_order multiples_of_10;
+	struct recurent_sequence_1st_order multiples_of_10;
 	multiples_of_10.recurence_relation = [](int n_1){return n_1 + 10;};
 	multiples_of_10.zeroth_memeber = 0;
 
@@ -15,7 +15,7 @@ void test_1st_order(){
 }
 
 void test_2nd_order() {
-	struct recurent_series_2nd_order fibbonaci;
+	struct recurent_sequence_2nd_order fibbonaci;
 	fibbonaci.recurence_relation = [](number n_1, number n_2) { return n_1 + n_2; };
 	fibbonaci.zeroth_memeber = 0;
 	fibbonaci.first_memeber = 1;

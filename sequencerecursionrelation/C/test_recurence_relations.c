@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "series.h"
+#include "sequence.h"
 
 number add10(number r) { return r + 10; }
 void test_1st_order(){
-	struct recurent_series_1st_order multiples_of_10;
+	struct recurent_sequence_1st_order multiples_of_10;
 	multiples_of_10.recurence_relation = &add10;
 	multiples_of_10.zeroth_memeber = 0;
 
@@ -17,7 +17,7 @@ void test_1st_order(){
 
 number sum(number n_1, number n_2) { return n_1 + n_2; }
 void test_2nd_order() {
-	struct recurent_series_2nd_order fibbonaci;
+	struct recurent_sequence_2nd_order fibbonaci;
 	fibbonaci.recurence_relation = &sum;
 	fibbonaci.zeroth_memeber = 0;
 	fibbonaci.first_memeber = 1;
