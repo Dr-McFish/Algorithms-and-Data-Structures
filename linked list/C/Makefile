@@ -4,8 +4,6 @@ CCFLAGS = -Wall -g
 TEST = test.out
 SRCS_TEST = linked_list_test.c
 
-all: ${LIBFILE} 
-
 clean:
 	rm -f *.o
 	rm -f *.out
