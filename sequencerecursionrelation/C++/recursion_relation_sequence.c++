@@ -8,11 +8,11 @@ number get_nth_first_order(const struct recurent_sequence_1st_order& sequence, u
 		return sequence.recurence_relation(get_nth_first_order(sequence, n - 1));
 }
 
-number get_nth_sedond_order(const struct recurent_sequence_2nd_order& sequence, unsigned int n)
+number get_nth_second_order(const struct recurent_sequence_2nd_order& sequence, unsigned int n)
 {
 	number a;
 	number rt;
-	static number cashe; /* stores an output of the last operation of this function. equivelent to get_nth_sedond_order(sequence, n - 2) */
+	static number cashe; /* stores an output of the last operation of this function. equivelent to get_nth_second_order(sequence, n - 2) */
 
 	switch (n)
 	{
@@ -22,7 +22,7 @@ number get_nth_sedond_order(const struct recurent_sequence_2nd_order& sequence, 
 			cashe = sequence.zeroth_memeber;
 			return sequence.first_memeber;
 		default:
-			a = get_nth_sedond_order(sequence, n - 1);	
+			a = get_nth_second_order(sequence, n - 1);	
 			rt = sequence.recurence_relation(cashe, a);
 			cashe = a;
 			return (rt);

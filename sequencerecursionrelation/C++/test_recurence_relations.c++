@@ -23,7 +23,7 @@ void test_2nd_order() {
 
 	for (i = 0; i < 40; i++)
 	{
-		printf("n:%3d, fibb %8d\n", i, get_nth_sedond_order(fibbonaci, i));
+		printf("n:%3d, fibb %8d\n", i, get_nth_second_order(fibbonaci, i));
 	}
 }
 

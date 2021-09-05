@@ -26,6 +26,6 @@ number get_nth_first_order(const struct recurent_sequence_1st_order* sequence, u
 *  returns nth member of a second order sequence
 *  O(n) wow
 */
-number get_nth_sedond_order(const struct recurent_sequence_2nd_order* sequence, unsigned int n);
+number get_nth_second_order(const struct recurent_sequence_2nd_order* sequence, unsigned int n);
 
 #endif
