@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-typedef int VALUE_TYPE;
+typedef int VALUE_TYPE; // this means that this is a hashmap of intergers, but it could easyly be changeged to anything else, such as pointers
 typedef struct	key_value_pair
 {
 	const char* key;
